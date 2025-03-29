@@ -18,6 +18,7 @@ class NavBar extends HTMLElement{
                 <li><a href="#">STORE</a></li>
                 <li><a href="#">ABOUT US</a></li>
             </ul>
+            <search-bar></search-bar>
             <div class="nav-log">
                 <img src="./image/person.png" alt="User Icon"/> <a href="./sign.html" class="link-log">Sign in / Register</a>
                 <a href="./basket.html"><button class="cart-btn"><i class="fa-solid fa-basket-shopping" style="color: #000000;"></i></button></a>

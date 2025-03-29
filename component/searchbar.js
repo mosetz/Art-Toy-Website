@@ -6,8 +6,12 @@ class SearchBar extends HTMLElement {
 
     connectedCallback(){
         this.shadowRoot.innerHTML = `
-        <style>${getStyle()}</style>>
-        `
+        <style>${this.getStyle()}</style>
+        <div class="search-cont">
+            <input type="text" class="search-bar" placeholder="Look for your favorite toys..." >
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        `;
     }
 
     getStyle(){
