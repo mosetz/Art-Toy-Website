@@ -6,7 +6,14 @@ class SearchBar extends HTMLElement {
 
     connectedCallback(){
         this.shadowRoot.innerHTML = `
-        
+        <style>${getStyle()}</style>>
         `
     }
+
+    getStyle(){
+        return`
+        `
+    }
+    
 }
+customElements.define('search-bar', SearchBar);
