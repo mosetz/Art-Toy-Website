@@ -20,7 +20,7 @@ class NavBar extends HTMLElement{
             </ul>
             <div class="nav-log">
                 <img src="./image/person.png" alt="User Icon"/> <a href="#" class="link-log">Sign in / Register</a>
-                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="cart-btn"><i class="fa-solid fa-basket-shopping" style="color: #000000;"></i></button>
             </div>
         </nav>
         `
