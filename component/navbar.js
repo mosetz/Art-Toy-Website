@@ -6,6 +6,7 @@ class NavBar extends HTMLElement{
 
     connectedCallback(){
         this.shadowRoot.innerHTML = `
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <style>${this.getStyle()}</style>
         <nav id="main-nav" class="nav-bar">
             <figure class="nav-logo"><img src="./image/popmartlogo.png"></figure>
@@ -19,6 +20,7 @@ class NavBar extends HTMLElement{
             </ul>
             <div class="nav-log">
                 <img src="./image/person.png" alt="User Icon"/> <a href="#" class="link-log">Sign in / Register</a>
+                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
         </nav>
         `
@@ -37,7 +39,6 @@ class NavBar extends HTMLElement{
         }
         
         .nav-logo img {
-            hight: 80px;
             width: 80px;
         }
 
@@ -52,6 +53,7 @@ class NavBar extends HTMLElement{
             color: black;
             font-weight: bold;
             font-size: 16px;
+            
         }
         
         .nav-log a {
@@ -65,7 +67,30 @@ class NavBar extends HTMLElement{
             height: 15px;
             background-color: black;
         }
+
+        .nav-list li a:hover {
+            color:rgb(240, 0, 0);
+        }
+
+        .nav-log a:hover {
+            color:rgb(240, 0, 0);
+        }
+        
+        .nav-log button {
+            background: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-left: 10px;
+            padding: 5px 22px;
+            border: 1px solid lightgrey;
+        }
+        
+        .nav-log button:hover {
+            border: 1px solid rgb(5, 5, 5);
+        }
         `
+
     }
 
 
