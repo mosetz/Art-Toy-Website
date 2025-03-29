@@ -19,11 +19,12 @@ class NavBar extends HTMLElement{
                 <li><a href="#">ABOUT US</a></li>
             </ul>
             <div class="nav-log">
-                <img src="./image/person.png" alt="User Icon"/> <a href="#" class="link-log">Sign in / Register</a>
-                <button class="cart-btn"><i class="fa-solid fa-basket-shopping" style="color: #000000;"></i></button>
+                <img src="./image/person.png" alt="User Icon"/> <a href="./sign.html" class="link-log">Sign in / Register</a>
+                <a href="./basket.html"><button class="cart-btn"><i class="fa-solid fa-basket-shopping" style="color: #000000;"></i></button></a>
             </div>
         </nav>
-        `
+        `;
+        
     }
     
     getStyle(){
@@ -92,6 +93,7 @@ class NavBar extends HTMLElement{
         `
 
     }
+
 
 
 
